@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Contato | Arena Transporte de Veículos</title>
+</head>
+
+<body class="bg-white w-full h-full overflow-x-hidden">
+  <header class="w-full">
+    <nav class="bg-[#F3F3F3] p-4 w-full">
+        <a href="./index.html" class="block mx-auto w-fit">
+          <img src="../assets/img/logo.png" class="h-12" alt="Logo Arena Transporte de Veículos" />
+        </a>
+    </nav>
+  </header>
+
+  <section class="w-full min-h-[85%] bg-cover bg-no-repeat flex items-center p-4 py-8 md:p-10 bg-center"
+    style="background-image: url(../assets/img/contato-bg.jpg)">
+    <div class="flex items-center justify-between gap-10 max-w-6xl mx-auto w-full flex-col lg:flex-row">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold text-center text-[#29428E] lg:text-left">
+          ESTAMOS SEMPRE <br /> À DISPOSIÇÃO</h1>
+        <p class="text-[#494949] font-semibold mt-2 text-center lg:text-left">
+          Entre em contato com a gente pelo formulário.
+        </p>
+      </div>
+      <form class="py-10 px-5 md:px-10 w-full max-w-lg bg-white rounded-2xl shadow-[0px_0px_16.5px_0px_rgba(0,0,0,0.10)] gap-3 flex flex-col">
+        <div class="flex flex-col">
+          <label class="text-[#414141] mb-1" for="name">Nome</label>
+          <input name="name" placeholder="Digite seu nome" class="text-[#414141] rounded-md border p-3 border-[#D9D9D9] outline-[#C6C6C6]"/>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-[#414141] mb-1" for="email">E-mail</label>
+          <input type="email" name="email" placeholder="Digite seu e-mail" class="text-[#414141] rounded-md border p-3 border-[#D9D9D9] outline-[#C6C6C6]"/>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-[#414141] mb-1" for="phone">Telefone</label>
+          <input name="phone" placeholder="Digite seu telefone" class="text-[#414141] rounded-md border p-3 border-[#D9D9D9] outline-[#C6C6C6]"/>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-[#414141] mb-1">Mensagem</label>
+          <textarea name="message" rows="5" placeholder="Digite sua mensagem" class="text-[#414141] rounded-md border p-3 border-[#D9D9D9] outline-[#C6C6C6]"></textarea>
+        </div>
+        
+        <button class="text-white font-bold p-5 bg-[#5B84FF] rounded-md mt-2">ENVIAR</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+<script>
+</script>
+
+</html>

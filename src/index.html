@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Assegura Pet</title>
+</head>
+
+<body class="bg-white w-full h-full overflow-x-hidden">
+  <header class="w-full mt-4 md:mt-16 px-3 md:px-5">
+    <nav id="nav-bar" class="bg-gradient-to-b transition-[border-radius] duration-300 from-[#3489FE] to-[#1C6DDD] py-4 px-8 w-full max-w-[1600px] mx-auto rounded-full">
+      <div class="flex flex-wrap items-center justify-between 2xl:justify-around">
+        <a href="./index.html" class="flex items-center">
+          <img src="../assets/img/logo.png" class="h-8 md:h-10" alt="Logo Assegura Pet" />
+        </a>
+        <div class="flex items-center gap-5">
+          <button id="collapse-toggler" type="button" class="inline-flex items-center p-2 w-10 
+                   h-10 justify-center text-sm text-white rounded-lg 
+                   2xl:hidden focus:ring-2 focus:ring-gray-300"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden md:block 2xl:hidden">
+            <a class="block rounded-full text-white font-bold px-14 py-2 bg-[#2ACA72] hover:bg-[#2ACA72DD]" href="./portal.html">Portal do Cliente</a>
+          </div>
+        </div>
+        
+        <div id="collapse" class="aria-expanded:max-h-80 max-h-0 w-full 2xl:block
+                 2xl:w-auto 2xl:!max-h-fit transition-all duration-500
+                 overflow-hidden" id="navbar-default">
+          <ul class="font-light flex flex-col 2xl:p-0
+                     mt-4 rounded-lg items-center gap-2 2xl:flex-row 
+                     2xl:gap-5 2xl:mt-0 text-white [&_li]:h-fit">
+            <li>
+              <a href="./index.html#inicio" class="font-bold" aria-current="page">Início</a>
+            </li>
+            <li>
+              <a href="./index.html#sobre-nos">Sobre nós</a>
+            </li>
+            <li>
+              <a href="./index.html#condicoes">Condições Gerais</a>
+            </li>
+            <li>
+              <a href="./index.html#funcionamento">Como funciona</a>
+            </li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="./index.html#planos">Conheça os Planos</a>
+            </li>
+            <li>
+              <a href="./index.html#duvidas">Dúvidas</a>
+            </li>
+            <li>
+              <a href="./index.html#contato">Contato</a>
+            </li>
+            <li class="md:hidden">
+              <a class="block rounded-full text-white font-bold px-5 py-2 bg-[#2ACA72]" href="./portal.html">Portal do Cliente</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden 2xl:block">
+          <a class="block rounded-full text-white font-bold px-14 py-2 bg-[#2ACA72] hover:bg-[#2ACA72DD]" href="./portal.html">Portal do Cliente</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio" class="relative w-full min-h-[90%] px-4 py-8 md:px-8 md:py-12 flex flex-col justify-center">
+    <svg class="absolute -z-10 left-0 top-1/2 -translate-y-1/2 w-1/4 min-w-md" viewBox="0 0 566 759" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.07">
+      <path d="M565.898 201.188C565.744 149.859 546.078 98.5828 507.002 59.456C428.44 -19.1064 300.66 -19.1064 222.149 59.456L-132.978 414.583C-211.54 493.094 -211.54 620.925 -133.029 699.436C-94.9838 737.482 -44.3249 758.384 9.4744 758.384C51.3812 758.384 91.3833 745.719 125.053 722.037C158.62 745.719 198.622 758.435 240.528 758.384C294.328 758.384 344.935 737.43 382.981 699.385C439.354 643.063 455.314 561.206 430.705 490.417H473.333C524.506 490.417 566.053 448.922 566.001 397.8V201.188H565.898ZM473.333 397.748H366.197L223.333 254.833L157.796 320.37L278.831 441.457L317.443 480.12C326.916 489.49 334.278 500.353 339.426 511.885C357.754 551.99 350.392 601.002 317.443 633.951C296.953 654.492 269.616 665.767 240.528 665.715C224.723 665.767 209.33 662.42 195.327 655.985C192.392 654.647 189.509 653.154 186.678 651.558L208.558 613.615C230.85 575.003 202.998 526.712 158.414 526.712H91.5377C46.9538 526.712 19.1017 575.003 41.3937 613.615L63.2738 651.558C60.4937 653.154 57.6106 654.647 54.6761 655.985C40.6729 662.42 25.2797 665.767 9.42302 665.767C-19.6132 665.767 -46.9506 654.492 -67.4406 633.951C-87.9822 613.409 -99.3598 586.02 -99.3083 557.036C-99.3598 541.179 -95.9104 525.837 -89.4751 511.782C-84.2239 500.199 -76.862 489.439 -67.4406 480.12L287.635 124.993C330.057 82.5717 399.043 82.5203 441.517 124.993C462.521 145.998 473.075 173.542 473.23 201.188H473.333V397.748Z" fill="#3489FE"/>
+      <path d="M-191.515 124.942C-212.571 145.947 -223.177 173.541 -223.331 201.187V397.748C-223.331 448.922 -264.826 490.417 -316 490.417V201.187C-315.846 149.808 -296.179 98.531 -257.052 59.4043C-178.541 -19.1582 -50.7102 -19.1582 27.8008 59.4043L92.2571 123.809L26.7197 189.346L-37.6851 124.942C-58.2267 104.4 -85.5639 93.0739 -114.6 93.0739C-143.636 93.0739 -170.974 104.4 -191.515 124.942Z" fill="#3489FE"/>
+      </g>
+      </svg>
+    
+    <div class="w-full max-w-7xl mx-auto flex items-center flex-col xl:flex-row gap-5">
+      <div class="max-w-xl xl:max-w-lg 2xl:max-w-xl flex flex-col items-center xl:items-start gap-3 tracking-wide">
+        <h3 class="text-center xl:text-left text-[#9671D5] font-bold">Assistência veterinária de qualidade onde você quiser!</h3>
+        <h1 class="text-center xl:text-left text-[#3489FE] font-bold text-3xl md:text-6xl">Amor Incondicional: Cuide do Seu Pet com a Assegura Pet!</h1>
+        <p class="text-center xl:text-left md:text-lg font-light [&_strong]:font-bold">
+          Com nossos <strong>seguros</strong> você não apenas <strong>garante a saúde do seu pet
+            tendo a liberdade de ir onde quiser</strong>, mas também demonstra o
+          quanto <strong>ele é especial para você.</strong>
+        </p>
+        <a class="block rounded-full w-fit text-white font-bold px-8 md:px-16 py-3 bg-[#2ACA72] hover:bg-[#2ACA72DD]" href="./index.html#planos">CONHEÇA OS NOSSOS PLANOS</a>
+      </div>
+
+      <div class="bg-[#F3F3F3] rounded-r-[40px] rounded-l-[40px]
+                   xl:rounded-r-none p-2 md:p-5 2xl:p-8 xl:absolute xl:right-0
+                   xl:w-[50vw] max-w-2xl xl:max-w-4xl">
+        <img 
+          src="../assets/img/cat-dog.jpg"
+          alt="Cachorro e gato brincando com boboleta"
+          class="rounded-[40px]"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-nos" class="relative w-full min-h-[90%] py-8 md:py-12 flex flex-col items-center">
+   
+      <div class="space-y-3 text-center max-w-3xl px-4 md:px-8">
+        <h1 class="text-[#3489FE] font-bold text-3xl md:text-5xl">Sobre nós</h1>
+        <p class="font-light [&_strong]:font-bold md:text-lg">
+          No <strong>Assegura Pet</strong>, acreditamos que a saúde e o bem-estar de seu pet são fundamentais. Somos uma empresa dedicada a
+          proporcionar <strong>tranquilidade para as famílias</strong> que amam seus animais de estimação. Entendemos que os laços afetivos vão
+          além dos laços sanguíneos, e é por isso que nos preocupamos com seu pet como se fosse da nossa própria família.
+        </p>
+        <p class="font-bold md:text-lg text-[#3489FE]">Nós pensamos nos milhares de donos de pet em todo o Brasil que querem ter a liberdade de levar seu bichinho onde
+          quiser, sem a limitação de uma rede credenciada para atendimento.</p>
+      </div>
+
+      <div class="relative w-full h-72 md:h-96 mt-40 bg-cover bg-no-repeat px-4 md:px-8" style="background-image: url(../assets/img/logo-grid.jpg);">
+        <img src="../assets/img/person-dog.jpg" alt="Mulher segurando cachorro" class="object-cover object-center absolute left-1/2 -translate-x-1/2 h-[150%] rounded-[60px] -top-1/4" />
+      
+        <div class="absolute absolute-center rounded-full w-44 h-44 bg-transparent border-white border grid place-items-center">
+          <div class="rounded-full w-36 h-36 bg-[#2F86FD]/80 grid place-items-center">
+            <svg width="80" height="69" viewBox="0 0 80 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M79.9801 18.4897C79.9616 13.8903 78.1976 9.29086 74.6973 5.78127C67.6504 -1.26563 56.1888 -1.26563 49.1419 5.78127L17.2969 37.6262C10.25 44.6639 10.25 56.1347 17.2969 63.1816C20.7049 66.5989 25.2489 68.4737 30.0792 68.4737C33.8382 68.4737 37.4309 67.3377 40.451 65.2135C43.4618 67.3377 47.0453 68.483 50.8043 68.4737C55.6254 68.4737 60.1694 66.5896 63.5774 63.1816C68.6293 58.1297 70.0701 50.7872 67.8628 44.4422H71.6864C76.2766 44.4422 80.0078 40.7202 79.9986 36.13V18.4897H79.9894H79.9801ZM71.6772 36.1208H62.0627L49.2527 23.3015L43.3787 29.1755L54.24 40.0368L57.7034 43.5094C58.5531 44.3499 59.2181 45.3196 59.6799 46.354C61.3238 49.9468 60.6681 54.343 57.7034 57.2984C55.8655 59.1456 53.4088 60.1523 50.8043 60.1523C49.382 60.1523 48.0059 59.8568 46.7498 59.2749C46.4819 59.1548 46.2326 59.0255 45.974 58.8778L47.932 55.479C49.9269 52.0156 47.4332 47.684 43.4341 47.684H37.4309C33.4318 47.684 30.9381 52.0156 32.9331 55.479L34.8911 58.8778C34.6417 59.0163 34.3831 59.1548 34.1152 59.2749C32.8592 59.8475 31.483 60.1523 30.0515 60.1523C27.447 60.1523 24.9995 59.1364 23.1616 57.2984C21.3237 55.4605 20.2985 53.0038 20.3078 50.3993C20.3078 48.977 20.6125 47.6009 21.1852 46.3448C21.6562 45.3104 22.3119 44.3406 23.1616 43.5094L55.0066 11.6552C58.8117 7.85008 64.9997 7.85008 68.8141 11.6552C70.6982 13.5393 71.6402 16.0053 71.6587 18.4897H71.6679V36.1208H71.6772Z" fill="white"/>
+              <path d="M12.0411 11.6547C10.1477 13.5388 9.19644 16.014 9.1872 18.4892V36.1203C9.1872 40.7104 5.46518 44.4325 0.875 44.4325V18.4892C0.893472 13.8805 2.64827 9.2811 6.1671 5.7715C13.2048 -1.2754 24.6756 -1.2754 31.7133 5.7715L37.4949 11.5531L31.6117 17.4271L25.8301 11.6455C23.9922 9.80754 21.5354 8.78237 18.9309 8.78237C16.3265 8.78237 13.879 9.7983 12.0318 11.6455L12.0411 11.6547Z" fill="white"/>
+              </svg>
+              
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-[90vh] bg-cover bg-no-repeat bg-center" style="background-image: url(../assets/img/bg_comofunciona.jpg);"></div>
+  </section>
+
+  <footer class="w-full p-4 py-8 md:p-10 bg-black">
+    <div class="flex flex-col gap-5 max-w-6xl items-center mx-auto">
+      <img src="../assets/img/logo-branca.png" />
+      <p class="text-white text-center md:text-lg max-w-lg">
+        Nós sabemos como podemos proteger seu veículo durante o transporte.
+        <strong class="text-[#FFC83A]">Clique em quero fazer uma cotação</strong> e garanta a segurança que seu
+        investimento merece.
+        <br />
+        <strong class="text-[#FFC83A]">Não arrisque, aja agora!</strong>
+      </p>
+      <button class="budget hover:scale-105 transition relative px-6
+            py-3 font-bold text-lg md:text-2xl bg-[#DE0A16]
+          text-white rounded-lg overflow-hidden">
+        QUERO FAZER UMA COTAÇÃO
+        <span class="shine absolute top-0 left-0 w-[150%] h-full text-transparent bg-transparent"></span>
+      </button>
+
+      <div class="flex gap-3 mt-3">
+        <a href="#">
+          <img src="../assets/img/facebook.png" alt="Facebook" />
+        </a>
+        <a href="#">
+          <img src="../assets/img/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+
+      <div class="space-y-2 w-full">
+        <p class="text-white text-center">(41) 3095-5252 | (41) 99270-5253 | comercial@arenatransautos.com.br</p>
+
+        <div class="w-full h-0.5 bg-[#8B8B8B]"></div>
+
+        <p class="text-white text-center">©2023 todos os direitos reservados | CNPJ 03.558.743/0001-70 - Arena Guinchos
+          e Cegonhas e Transportes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+<script>
+  const toggleNavbar = document.getElementById('collapse-toggler');
+  const collapse = document.getElementById('collapse');
+
+  let isMenuOpen = false;
+
+  toggleNavbar.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+
+    if (isMenuOpen)
+    {
+      $('#nav-bar').addClass('rounded-xl');
+      setTimeout(() => { collapse.ariaExpanded = String(isMenuOpen); }, 350)
+    }
+    else
+    {
+      setTimeout(() => {
+        $('#nav-bar').removeClass('rounded-xl');
+      }, 350)
+      collapse.ariaExpanded = String(isMenuOpen);
+    }
+
+    
+  })
+</script>
+
+</html>
