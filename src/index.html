@@ -17,7 +17,8 @@
 
 <body class="bg-white w-full h-full overflow-x-hidden">
   <header class="w-full mt-4 md:mt-16 px-3 md:px-5">
-    <nav id="nav-bar" class="bg-gradient-to-b transition-[border-radius] duration-300 from-[#3489FE] to-[#1C6DDD] py-4 px-8 w-full max-w-[1600px] mx-auto rounded-full">
+    <nav id="nav-bar"
+      class="bg-gradient-to-b transition-[border-radius] duration-300 from-[#3489FE] to-[#1C6DDD] py-4 px-8 w-full max-w-[1600px] mx-auto rounded-full">
       <div class="flex flex-wrap items-center justify-between 2xl:justify-around">
         <a href="./index.html" class="flex items-center">
           <img src="../assets/img/logo.png" class="h-8 md:h-10" alt="Logo Assegura Pet" />
@@ -25,8 +26,7 @@
         <div class="flex items-center gap-5">
           <button id="collapse-toggler" type="button" class="inline-flex items-center p-2 w-10 
                    h-10 justify-center text-sm text-white rounded-lg 
-                   2xl:hidden focus:ring-2 focus:ring-gray-300"
-          >
+                   2xl:hidden focus:ring-2 focus:ring-gray-300">
             <span class="sr-only">Open main menu</span>
             <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
@@ -34,10 +34,11 @@
             </svg>
           </button>
           <div class="hidden md:block 2xl:hidden">
-            <a class="block rounded-full text-white font-bold px-14 py-2 bg-[#2ACA72] hover:bg-[#2ACA72DD]" href="./portal.html">Portal do Cliente</a>
+            <a class="block rounded-full text-white font-bold px-14 py-2 bg-[#2ACA72] hover:bg-[#2ACA72DD]"
+              href="./portal.html">Portal do Cliente</a>
           </div>
         </div>
-        
+
         <div id="collapse" class="aria-expanded:max-h-80 max-h-0 w-full 2xl:block
                  2xl:w-auto 2xl:!max-h-fit transition-all duration-500
                  overflow-hidden" id="navbar-default">
@@ -54,7 +55,7 @@
               <a href="./index.html#condicoes">Condições Gerais</a>
             </li>
             <li>
-              <a href="./index.html#funcionamento">Como funciona</a>
+              <a href="./index.html#como-funciona">Como funciona</a>
             </li>
             <li>
               <a href="./blog.html">Blog</a>
@@ -69,136 +70,881 @@
               <a href="./index.html#contato">Contato</a>
             </li>
             <li class="md:hidden">
-              <a class="block rounded-full text-white font-bold px-5 py-2 bg-[#2ACA72]" href="./portal.html">Portal do Cliente</a>
+              <a class="block rounded-full text-white font-bold px-5 py-2 bg-[#2ACA72]" href="./portal.html">Portal do
+                Cliente</a>
             </li>
           </ul>
         </div>
 
         <div class="hidden 2xl:block">
-          <a class="block rounded-full text-white font-bold px-14 py-2 bg-[#2ACA72] hover:bg-[#2ACA72DD]" href="./portal.html">Portal do Cliente</a>
+          <a class="block rounded-full text-white font-bold px-14 py-2 bg-[#2ACA72] hover:bg-[#2ACA72DD]"
+            href="./portal.html">Portal do Cliente</a>
         </div>
       </div>
     </nav>
   </header>
 
   <section id="inicio" class="relative w-full min-h-[90%] px-4 py-8 md:px-8 md:py-12 flex flex-col justify-center">
-    <svg class="absolute -z-10 left-0 top-1/2 -translate-y-1/2 w-1/4 min-w-md" viewBox="0 0 566 759" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute -z-10 left-0 top-1/2 -translate-y-1/2 w-1/4 min-w-md" viewBox="0 0 566 759" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.07">
-      <path d="M565.898 201.188C565.744 149.859 546.078 98.5828 507.002 59.456C428.44 -19.1064 300.66 -19.1064 222.149 59.456L-132.978 414.583C-211.54 493.094 -211.54 620.925 -133.029 699.436C-94.9838 737.482 -44.3249 758.384 9.4744 758.384C51.3812 758.384 91.3833 745.719 125.053 722.037C158.62 745.719 198.622 758.435 240.528 758.384C294.328 758.384 344.935 737.43 382.981 699.385C439.354 643.063 455.314 561.206 430.705 490.417H473.333C524.506 490.417 566.053 448.922 566.001 397.8V201.188H565.898ZM473.333 397.748H366.197L223.333 254.833L157.796 320.37L278.831 441.457L317.443 480.12C326.916 489.49 334.278 500.353 339.426 511.885C357.754 551.99 350.392 601.002 317.443 633.951C296.953 654.492 269.616 665.767 240.528 665.715C224.723 665.767 209.33 662.42 195.327 655.985C192.392 654.647 189.509 653.154 186.678 651.558L208.558 613.615C230.85 575.003 202.998 526.712 158.414 526.712H91.5377C46.9538 526.712 19.1017 575.003 41.3937 613.615L63.2738 651.558C60.4937 653.154 57.6106 654.647 54.6761 655.985C40.6729 662.42 25.2797 665.767 9.42302 665.767C-19.6132 665.767 -46.9506 654.492 -67.4406 633.951C-87.9822 613.409 -99.3598 586.02 -99.3083 557.036C-99.3598 541.179 -95.9104 525.837 -89.4751 511.782C-84.2239 500.199 -76.862 489.439 -67.4406 480.12L287.635 124.993C330.057 82.5717 399.043 82.5203 441.517 124.993C462.521 145.998 473.075 173.542 473.23 201.188H473.333V397.748Z" fill="#3489FE"/>
-      <path d="M-191.515 124.942C-212.571 145.947 -223.177 173.541 -223.331 201.187V397.748C-223.331 448.922 -264.826 490.417 -316 490.417V201.187C-315.846 149.808 -296.179 98.531 -257.052 59.4043C-178.541 -19.1582 -50.7102 -19.1582 27.8008 59.4043L92.2571 123.809L26.7197 189.346L-37.6851 124.942C-58.2267 104.4 -85.5639 93.0739 -114.6 93.0739C-143.636 93.0739 -170.974 104.4 -191.515 124.942Z" fill="#3489FE"/>
+        <path
+          d="M565.898 201.188C565.744 149.859 546.078 98.5828 507.002 59.456C428.44 -19.1064 300.66 -19.1064 222.149 59.456L-132.978 414.583C-211.54 493.094 -211.54 620.925 -133.029 699.436C-94.9838 737.482 -44.3249 758.384 9.4744 758.384C51.3812 758.384 91.3833 745.719 125.053 722.037C158.62 745.719 198.622 758.435 240.528 758.384C294.328 758.384 344.935 737.43 382.981 699.385C439.354 643.063 455.314 561.206 430.705 490.417H473.333C524.506 490.417 566.053 448.922 566.001 397.8V201.188H565.898ZM473.333 397.748H366.197L223.333 254.833L157.796 320.37L278.831 441.457L317.443 480.12C326.916 489.49 334.278 500.353 339.426 511.885C357.754 551.99 350.392 601.002 317.443 633.951C296.953 654.492 269.616 665.767 240.528 665.715C224.723 665.767 209.33 662.42 195.327 655.985C192.392 654.647 189.509 653.154 186.678 651.558L208.558 613.615C230.85 575.003 202.998 526.712 158.414 526.712H91.5377C46.9538 526.712 19.1017 575.003 41.3937 613.615L63.2738 651.558C60.4937 653.154 57.6106 654.647 54.6761 655.985C40.6729 662.42 25.2797 665.767 9.42302 665.767C-19.6132 665.767 -46.9506 654.492 -67.4406 633.951C-87.9822 613.409 -99.3598 586.02 -99.3083 557.036C-99.3598 541.179 -95.9104 525.837 -89.4751 511.782C-84.2239 500.199 -76.862 489.439 -67.4406 480.12L287.635 124.993C330.057 82.5717 399.043 82.5203 441.517 124.993C462.521 145.998 473.075 173.542 473.23 201.188H473.333V397.748Z"
+          fill="#3489FE" />
+        <path
+          d="M-191.515 124.942C-212.571 145.947 -223.177 173.541 -223.331 201.187V397.748C-223.331 448.922 -264.826 490.417 -316 490.417V201.187C-315.846 149.808 -296.179 98.531 -257.052 59.4043C-178.541 -19.1582 -50.7102 -19.1582 27.8008 59.4043L92.2571 123.809L26.7197 189.346L-37.6851 124.942C-58.2267 104.4 -85.5639 93.0739 -114.6 93.0739C-143.636 93.0739 -170.974 104.4 -191.515 124.942Z"
+          fill="#3489FE" />
       </g>
-      </svg>
-    
+    </svg>
+
     <div class="w-full max-w-7xl mx-auto flex items-center flex-col xl:flex-row gap-5">
       <div class="max-w-xl xl:max-w-lg 2xl:max-w-xl flex flex-col items-center xl:items-start gap-3 tracking-wide">
-        <h3 class="text-center xl:text-left text-[#9671D5] font-bold">Assistência veterinária de qualidade onde você quiser!</h3>
-        <h1 class="text-center xl:text-left text-[#3489FE] font-bold text-3xl md:text-6xl">Amor Incondicional: Cuide do Seu Pet com a Assegura Pet!</h1>
+        <h3 class="text-center xl:text-left text-[#9671D5] font-bold">Assistência veterinária de qualidade onde você
+          quiser!</h3>
+        <h1 class="text-center xl:text-left text-[#3489FE] font-bold text-3xl md:text-6xl">Amor Incondicional: Cuide do
+          Seu Pet com a Assegura Pet!</h1>
         <p class="text-center xl:text-left md:text-lg font-light [&_strong]:font-bold">
           Com nossos <strong>seguros</strong> você não apenas <strong>garante a saúde do seu pet
             tendo a liberdade de ir onde quiser</strong>, mas também demonstra o
           quanto <strong>ele é especial para você.</strong>
         </p>
-        <a class="block rounded-full w-fit text-white font-bold px-8 md:px-16 py-3 bg-[#2ACA72] hover:bg-[#2ACA72DD]" href="./index.html#planos">CONHEÇA OS NOSSOS PLANOS</a>
+        <a class="block rounded-full w-fit text-white font-bold px-8 md:px-16 py-3 bg-[#2ACA72] hover:bg-[#2ACA72DD]"
+          href="./index.html#planos">CONHEÇA OS NOSSOS PLANOS</a>
       </div>
 
       <div class="bg-[#F3F3F3] rounded-r-[40px] rounded-l-[40px]
                    xl:rounded-r-none p-2 md:p-5 2xl:p-8 xl:absolute xl:right-0
                    xl:w-[50vw] max-w-2xl xl:max-w-4xl">
-        <img 
-          src="../assets/img/cat-dog.jpg"
-          alt="Cachorro e gato brincando com boboleta"
-          class="rounded-[40px]"
-        />
+        <img src="../assets/img/cat-dog.jpg" alt="Cachorro e gato brincando com boboleta" class="rounded-[40px]" />
       </div>
     </div>
   </section>
 
   <section id="sobre-nos" class="relative w-full min-h-[90%] pt-8 md:pt-12 flex flex-col items-center">
-   
-      <div class="space-y-3 text-center max-w-3xl px-4 md:px-8">
-        <h1 class="text-[#3489FE] font-bold text-3xl md:text-5xl">Sobre nós</h1>
-        <p class="font-light [&_strong]:font-bold md:text-lg">
-          No <strong>Assegura Pet</strong>, acreditamos que a saúde e o bem-estar de seu pet são fundamentais. Somos uma empresa dedicada a
-          proporcionar <strong>tranquilidade para as famílias</strong> que amam seus animais de estimação. Entendemos que os laços afetivos vão
-          além dos laços sanguíneos, e é por isso que nos preocupamos com seu pet como se fosse da nossa própria família.
-        </p>
-        <p class="font-bold md:text-lg text-[#3489FE]">Nós pensamos nos milhares de donos de pet em todo o Brasil que querem ter a liberdade de levar seu bichinho onde
-          quiser, sem a limitação de uma rede credenciada para atendimento.</p>
+
+    <div class="space-y-3 text-center max-w-3xl px-4 md:px-8">
+      <h1 class="text-[#3489FE] font-bold text-3xl md:text-5xl">Sobre nós</h1>
+      <p class="font-light [&_strong]:font-bold md:text-lg">
+        No <strong>Assegura Pet</strong>, acreditamos que a saúde e o bem-estar de seu pet são fundamentais. Somos uma
+        empresa dedicada a
+        proporcionar <strong>tranquilidade para as famílias</strong> que amam seus animais de estimação. Entendemos que
+        os laços afetivos vão
+        além dos laços sanguíneos, e é por isso que nos preocupamos com seu pet como se fosse da nossa própria família.
+      </p>
+      <p class="font-bold md:text-lg text-[#3489FE]">Nós pensamos nos milhares de donos de pet em todo o Brasil que
+        querem ter a liberdade de levar seu bichinho onde
+        quiser, sem a limitação de uma rede credenciada para atendimento.</p>
+    </div>
+
+    <div class="relative z-10 w-full h-72 md:h-96 mt-40 bg-cover bg-no-repeat px-4 md:px-8"
+      style="background-image: url(../assets/img/logo-grid.jpg);">
+      <img src="../assets/img/person-dog.jpg" alt="Mulher segurando cachorro"
+        class="object-cover object-center absolute left-1/2 -translate-x-1/2 h-[150%] rounded-[60px] -top-1/4" />
+
+      <div
+        class="absolute absolute-center rounded-full w-44 h-44 bg-transparent border-white border grid place-items-center">
+        <div class="rounded-full w-36 h-36 bg-[#2F86FD]/80 grid place-items-center">
+          <svg width="80" height="69" viewBox="0 0 80 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M79.9801 18.4897C79.9616 13.8903 78.1976 9.29086 74.6973 5.78127C67.6504 -1.26563 56.1888 -1.26563 49.1419 5.78127L17.2969 37.6262C10.25 44.6639 10.25 56.1347 17.2969 63.1816C20.7049 66.5989 25.2489 68.4737 30.0792 68.4737C33.8382 68.4737 37.4309 67.3377 40.451 65.2135C43.4618 67.3377 47.0453 68.483 50.8043 68.4737C55.6254 68.4737 60.1694 66.5896 63.5774 63.1816C68.6293 58.1297 70.0701 50.7872 67.8628 44.4422H71.6864C76.2766 44.4422 80.0078 40.7202 79.9986 36.13V18.4897H79.9894H79.9801ZM71.6772 36.1208H62.0627L49.2527 23.3015L43.3787 29.1755L54.24 40.0368L57.7034 43.5094C58.5531 44.3499 59.2181 45.3196 59.6799 46.354C61.3238 49.9468 60.6681 54.343 57.7034 57.2984C55.8655 59.1456 53.4088 60.1523 50.8043 60.1523C49.382 60.1523 48.0059 59.8568 46.7498 59.2749C46.4819 59.1548 46.2326 59.0255 45.974 58.8778L47.932 55.479C49.9269 52.0156 47.4332 47.684 43.4341 47.684H37.4309C33.4318 47.684 30.9381 52.0156 32.9331 55.479L34.8911 58.8778C34.6417 59.0163 34.3831 59.1548 34.1152 59.2749C32.8592 59.8475 31.483 60.1523 30.0515 60.1523C27.447 60.1523 24.9995 59.1364 23.1616 57.2984C21.3237 55.4605 20.2985 53.0038 20.3078 50.3993C20.3078 48.977 20.6125 47.6009 21.1852 46.3448C21.6562 45.3104 22.3119 44.3406 23.1616 43.5094L55.0066 11.6552C58.8117 7.85008 64.9997 7.85008 68.8141 11.6552C70.6982 13.5393 71.6402 16.0053 71.6587 18.4897H71.6679V36.1208H71.6772Z"
+              fill="white" />
+            <path
+              d="M12.0411 11.6547C10.1477 13.5388 9.19644 16.014 9.1872 18.4892V36.1203C9.1872 40.7104 5.46518 44.4325 0.875 44.4325V18.4892C0.893472 13.8805 2.64827 9.2811 6.1671 5.7715C13.2048 -1.2754 24.6756 -1.2754 31.7133 5.7715L37.4949 11.5531L31.6117 17.4271L25.8301 11.6455C23.9922 9.80754 21.5354 8.78237 18.9309 8.78237C16.3265 8.78237 13.879 9.7983 12.0318 11.6455L12.0411 11.6547Z"
+              fill="white" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="como-funciona">
+    <div class="relative w-full bg-cover bg-no-repeat bg-center px-4 md:px-8 pt-40 pb-8 md:pb-12"
+      style="background-image: url(../assets/img/bg_comofunciona.jpg);">
+      <h1 class="text-white font-bold text-2xl md:text-5xl text-center">Como Funciona</h1>
+
+      <div class="hidden xl:flex justify-center gap-5 max-w-7xl mx-auto">
+        <div class="flex flex-col gap-24">
+          <div class="max-w-xs space-y-3">
+            <img class="min-w-[280px] w-[24vw]" src="../assets/img/leve-atendimento.svg" />
+            <h2 class="text-white font-bold text-3xl text-center ml-9">Leve seu pet para atendimento</h2>
+          </div>
+          <div class="max-w-sm space-y-3 ml-10">
+            <img class="min-w-[280px] w-[24vw]" src="../assets/img/reembolso.svg" />
+            <h2 class="text-white font-bold text-3xl text-center">Acesse o portal e solicite reembolso</h2>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center gap-20 min-w-sm">
+          <img src="../assets/img/paws-track-1.svg" />
+          <img src="../assets/img/paws-track-2.svg" />
+          <img src="../assets/img/paws-track-1.svg" />
+        </div>
+
+        <div class="flex flex-col mt-20  gap-24">
+          <div class="max-w-sm space-y-3">
+            <img class="min-w-[280px] w-[24vw]" src="../assets/img/documentos.svg" />
+            <h2 class="text-white font-bold text-3xl text-center">Solicite os documentos no atendimento</h2>
+          </div>
+          <div class="max-w-sm space-y-3 ml-10">
+            <img class="min-w-[280px] w-[24vw]" src="../assets/img/pix.svg" />
+            <h2 class="text-white font-bold text-3xl text-center">Receba o pix do reembolso na conta cadastrada</h2>
+          </div>
+        </div>
+
       </div>
 
-      <div class="relative w-full h-72 md:h-96 mt-40 bg-cover bg-no-repeat px-4 md:px-8" style="background-image: url(../assets/img/logo-grid.jpg);">
-        <img src="../assets/img/person-dog.jpg" alt="Mulher segurando cachorro" class="object-cover object-center absolute left-1/2 -translate-x-1/2 h-[150%] rounded-[60px] -top-1/4" />
-      
-        <div class="absolute absolute-center rounded-full w-44 h-44 bg-transparent border-white border grid place-items-center">
-          <div class="rounded-full w-36 h-36 bg-[#2F86FD]/80 grid place-items-center">
-            <svg width="80" height="69" viewBox="0 0 80 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M79.9801 18.4897C79.9616 13.8903 78.1976 9.29086 74.6973 5.78127C67.6504 -1.26563 56.1888 -1.26563 49.1419 5.78127L17.2969 37.6262C10.25 44.6639 10.25 56.1347 17.2969 63.1816C20.7049 66.5989 25.2489 68.4737 30.0792 68.4737C33.8382 68.4737 37.4309 67.3377 40.451 65.2135C43.4618 67.3377 47.0453 68.483 50.8043 68.4737C55.6254 68.4737 60.1694 66.5896 63.5774 63.1816C68.6293 58.1297 70.0701 50.7872 67.8628 44.4422H71.6864C76.2766 44.4422 80.0078 40.7202 79.9986 36.13V18.4897H79.9894H79.9801ZM71.6772 36.1208H62.0627L49.2527 23.3015L43.3787 29.1755L54.24 40.0368L57.7034 43.5094C58.5531 44.3499 59.2181 45.3196 59.6799 46.354C61.3238 49.9468 60.6681 54.343 57.7034 57.2984C55.8655 59.1456 53.4088 60.1523 50.8043 60.1523C49.382 60.1523 48.0059 59.8568 46.7498 59.2749C46.4819 59.1548 46.2326 59.0255 45.974 58.8778L47.932 55.479C49.9269 52.0156 47.4332 47.684 43.4341 47.684H37.4309C33.4318 47.684 30.9381 52.0156 32.9331 55.479L34.8911 58.8778C34.6417 59.0163 34.3831 59.1548 34.1152 59.2749C32.8592 59.8475 31.483 60.1523 30.0515 60.1523C27.447 60.1523 24.9995 59.1364 23.1616 57.2984C21.3237 55.4605 20.2985 53.0038 20.3078 50.3993C20.3078 48.977 20.6125 47.6009 21.1852 46.3448C21.6562 45.3104 22.3119 44.3406 23.1616 43.5094L55.0066 11.6552C58.8117 7.85008 64.9997 7.85008 68.8141 11.6552C70.6982 13.5393 71.6402 16.0053 71.6587 18.4897H71.6679V36.1208H71.6772Z" fill="white"/>
-              <path d="M12.0411 11.6547C10.1477 13.5388 9.19644 16.014 9.1872 18.4892V36.1203C9.1872 40.7104 5.46518 44.4325 0.875 44.4325V18.4892C0.893472 13.8805 2.64827 9.2811 6.1671 5.7715C13.2048 -1.2754 24.6756 -1.2754 31.7133 5.7715L37.4949 11.5531L31.6117 17.4271L25.8301 11.6455C23.9922 9.80754 21.5354 8.78237 18.9309 8.78237C16.3265 8.78237 13.879 9.7983 12.0318 11.6455L12.0411 11.6547Z" fill="white"/>
+
+      <div class="flex xl:hidden justify-center items-center flex-col gap-5 mt-5">
+        <div class="max-w-sm space-y-3">
+          <img class="min-w-[280px] mx-auto" src="../assets/img/leve-atendimento.svg" />
+          <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Leve seu pet para atendimento</h2>
+        </div>
+        <img src="../assets/img/paws-track-v.svg" />
+        <div class="max-w-sm space-y-3">
+          <img class="min-w-[280px] mx-auto" src="../assets/img/reembolso.svg" />
+          <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Acesse o portal e solicite reembolso
+          </h2>
+        </div>
+        <img src="../assets/img/paws-track-v.svg" />
+        <div class="max-w-sm space-y-3">
+          <img class="min-w-[280px] mx-auto" src="../assets/img/documentos.svg" />
+          <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Solicite os documentos no atendimento
+          </h2>
+        </div>
+        <img src="../assets/img/paws-track-v.svg" />
+        <div class="max-w-sm space-y-3">
+          <img class="min-w-[280px] mx-auto" src="../assets/img/pix.svg" />
+          <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Receba o pix do reembolso na conta
+            cadastrada</h2>
+        </div>
+      </div>
+
+      <a class="absolute -bottom-6 rounded-full w-fit text-white font-bold left-1/2 -translate-x-1/2 px-8 md:px-20 py-3 bg-[#2ACA72] hover:bg-[#4fab78]"
+        href="./index.html#planos">SAIBA MAIS</a>
+    </div>
+  </section>
+
+  <section class="px-4 py-8 md:px-8 md:py-12">
+    <div class="w-full max-w-7xl mx-auto flex flex-col">
+      <div class="flex justify-between items-end">
+        <h1 class="text-[#3489FE] font-bold text-3xl md:text-5xl max-w-md">Porque contratar a AsseguraPet</h1>
+        <img class="w-36 sm:w-44 md:w-56" src="../assets/img/cat-dog-2.svg" />
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2 mt-5 md:gap-10 relative">
+        <div
+          class="flex flex-col aspect-[584/492] items-center justify-center p-3 bg-white border-[3px] border-[#BEAEF9] rounded-[42px]">
+          <svg class="w-24 h-24 md:w-32 md:h-32" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M51 102H28.3333C22.0741 102 17 96.9262 17 90.667V34.0003C17 27.7411 22.0741 22.667 28.3333 22.667H96.3333C102.593 22.667 107.667 27.7411 107.667 34.0003V62.3337"
+              stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M107.667 51.0003H17" stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M42.5013 14.166V31.166" stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M82.1654 14.166V31.166" stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M90.668 96.333V96.333C100.057 96.333 107.668 103.944 107.668 113.333V113.333C107.668 116.463 105.131 119 102.001 119H79.3346C76.205 119 73.668 116.463 73.668 113.333V113.333C73.668 103.944 81.2791 96.333 90.668 96.333Z"
+              stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M73.6675 83.5837C72.8858 83.5868 72.2544 84.2225 72.2565 85.0041C72.2586 85.7858 72.8934 86.418 73.6751 86.417C74.4567 86.416 75.0898 85.782 75.0898 85.0003C75.0914 84.6232 74.9418 84.2611 74.6746 83.9949C74.4073 83.7288 74.0447 83.5807 73.6675 83.5837"
+              stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M107.668 83.5837C106.886 83.5868 106.254 84.2225 106.257 85.0041C106.259 85.7858 106.893 86.418 107.675 86.417C108.457 86.416 109.09 85.782 109.09 85.0003C109.091 84.6232 108.942 84.2611 108.675 83.9949C108.407 83.7288 108.045 83.5807 107.668 83.5837"
+              stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M90.6675 77.9167C89.8858 77.9198 89.2544 78.5555 89.2565 79.3371C89.2586 80.1188 89.8934 80.7511 90.6751 80.75C91.4567 80.749 92.0898 80.115 92.0898 79.3333C92.0914 78.9562 91.9418 78.5941 91.6746 78.3279C91.4073 78.0618 91.0447 77.9137 90.6675 77.9167"
+              stroke="#9671D5" stroke-width="8.49646" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <h2 class="font-bold text-[#3489FE] text-lg md:text-2xl max-w-sm  text-center">Atendimento acessível em mais
+            de 53 mil estabelecimentos a sua disposição</h2>
+        </div>
+        <div
+          class="flex flex-col aspect-[584/492] items-center justify-center p-3 bg-white border-[3px] border-[#BEAEF9] rounded-[42px]">
+          <svg class="w-24 h-24 md:w-32 md:h-32" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M48.1671 17V27.2C48.0257 28.9166 49.2865 30.4296 51.0004 30.6H73.6671C75.381 30.4296 76.6418 28.9166 76.5004 27.2V17"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M67.9987 119H39.6654C33.4061 119 28.332 113.926 28.332 107.667V28.3333C28.332 22.0741 33.4061 17 39.6654 17H84.9987C91.2579 17 96.332 22.0741 96.332 28.3333V51"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M96.332 85V85C105.721 85 113.332 92.6112 113.332 102V102C113.332 105.13 110.795 107.667 107.665 107.667H84.9987C81.8691 107.667 79.332 105.13 79.332 102V102C79.332 92.6112 86.9432 85 96.332 85Z"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M79.3356 72.2498C78.5539 72.2529 77.9225 72.8886 77.9245 73.6703C77.9266 74.452 78.5614 75.0842 79.3431 75.0832C80.1248 75.0822 80.758 74.4482 80.758 73.6665C80.7595 73.2893 80.61 72.9272 80.3427 72.661C80.0755 72.3948 79.7128 72.2467 79.3356 72.2498"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M113.332 72.2498C112.55 72.2529 111.919 72.8886 111.921 73.6703C111.923 74.452 112.558 75.0842 113.339 75.0832C114.121 75.0822 114.754 74.4482 114.754 73.6665C114.756 73.2893 114.606 72.9272 114.339 72.661C114.072 72.3948 113.709 72.2467 113.332 72.2498"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M96.3356 66.5837C95.5539 66.5869 94.9225 67.2225 94.9245 68.0042C94.9266 68.7859 95.5614 69.4182 96.3431 69.4172C97.1248 69.4162 97.758 68.7822 97.758 68.0004C97.7595 67.6233 97.61 67.2612 97.3427 66.995C97.0755 66.7288 96.7128 66.5807 96.3356 66.5837"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+
+          <h2 class="font-bold text-[#3489FE] text-lg md:text-2xl max-w-sm text-center">Documentação Descomplicada</h2>
+          <p class="font-light md:text-lg text-center max-w-sm leading-tight">Preencha a documentação necessária junto
+            com o profissional de sua escolha. Mantemos tudo simples e transparente.</p>
+        </div>
+
+        <img src="../assets/img/logo.svg" class="hidden md:block absolute absolute-center z-10" />
+
+        <div
+          class="flex flex-col aspect-[584/492] items-center justify-center p-3 bg-white border-[3px] border-[#BEAEF9] rounded-[42px]">
+          <svg class="w-24 h-24 md:w-32 md:h-32" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M113.335 56.6673V39.6673C113.335 33.4081 108.261 28.334 102.001 28.334H34.0013C27.7421 28.334 22.668 33.4081 22.668 39.6673V96.334"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M62.3333 119H28.3333C22.0741 119 17 113.926 17 107.666V102C17 98.8701 19.5371 96.333 22.6667 96.333H42.3046C44.198 96.333 45.9661 97.2793 47.0163 98.8547L49.3157 102.304C50.3667 103.88 52.136 104.827 54.0306 104.827H62.3333"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M102 96.333V96.333C111.389 96.333 119 103.944 119 113.333V113.333C119 116.463 116.463 119 113.333 119H90.6667C87.5371 119 85 116.463 85 113.333V113.333C85 103.944 92.6112 96.333 102 96.333Z"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M103.418 79.3351C103.417 80.117 102.783 80.7503 102.001 80.75C101.219 80.7497 100.585 80.1159 100.585 79.334C100.584 78.552 101.218 77.9177 101.999 77.9167C102.376 77.9162 102.737 78.0655 103.003 78.3316C103.269 78.5977 103.418 78.9587 103.418 79.3351"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M120.418 85.0021C120.417 85.784 119.783 86.4173 119.001 86.417C118.219 86.4167 117.585 85.7829 117.585 85.0009C117.584 84.219 118.218 83.5847 118.999 83.5837C119.376 83.5832 119.737 83.7325 120.003 83.9986C120.269 84.2647 120.418 84.6257 120.418 85.0021"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M86.418 85.0021C86.417 85.784 85.7827 86.4173 85.0007 86.417C84.2188 86.4167 83.585 85.7829 83.5846 85.0009C83.5843 84.219 84.2176 83.5847 84.9995 83.5837C85.3758 83.5832 85.7369 83.7325 86.003 83.9986C86.2691 84.2647 86.4184 84.6257 86.418 85.0021"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+
+
+          <h2 class="font-bold text-[#3489FE] text-lg md:text-2xl max-w-sm text-center">Envio por E-mail</h2>
+          <p class="font-light md:text-lg text-center max-w-sm leading-tight">Envie a documentação pela plataforma,
+            solicitando o reembolso das despesas relacionadas ao evento. Facilitamos o processo para você.</p>
+        </div>
+        <div
+          class="flex flex-col aspect-[584/492] items-center justify-center p-3 bg-white border-[3px] border-[#BEAEF9] rounded-[42px]">
+          <svg class="w-24 h-24 md:w-32 md:h-32" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M73.668 56.6663H96.3346" stroke="#9671D5" stroke-width="8.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M39.668 55.1139L44.8756 59.8059L55.359 50.3652" stroke="#9671D5" stroke-width="8.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M62.3333 119H45.3333C29.6853 119 17 106.315 17 90.6667V45.3333C17 29.6853 29.6853 17 45.3333 17H90.6667C106.315 17 119 29.6853 119 45.3333V56.6667"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M39.668 83.4479L44.8756 88.1399L55.359 78.6992" stroke="#9671D5" stroke-width="8.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M102 96.333V96.333C111.389 96.333 119 103.944 119 113.333V113.333C119 116.463 116.463 119 113.333 119H90.6667C87.5371 119 85 116.463 85 113.333V113.333C85 103.944 92.6112 96.333 102 96.333Z"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M103.418 79.3351C103.417 80.117 102.783 80.7503 102.001 80.75C101.219 80.7497 100.585 80.1159 100.585 79.334C100.584 78.552 101.218 77.9177 101.999 77.9167C102.376 77.9162 102.737 78.0655 103.003 78.3316C103.269 78.5977 103.418 78.9587 103.418 79.3351"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M120.418 85.0021C120.417 85.784 119.783 86.4173 119.001 86.417C118.219 86.4167 117.585 85.7829 117.585 85.0009C117.584 84.219 118.218 83.5847 118.999 83.5837C119.376 83.5832 119.737 83.7325 120.003 83.9986C120.269 84.2647 120.418 84.6257 120.418 85.0021"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M86.418 85.0021C86.417 85.784 85.7827 86.4173 85.0007 86.417C84.2188 86.4167 83.585 85.7829 83.5846 85.0009C83.5843 84.219 84.2176 83.5847 84.9995 83.5837C85.3758 83.5832 85.7369 83.7325 86.003 83.9986C86.2691 84.2647 86.4184 84.6257 86.418 85.0021"
+              stroke="#9671D5" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+
+          <h2 class="font-bold text-[#3489FE] text-lg md:text-2xl max-w-sm text-center">Reembolso Garantido</h2>
+          <p class="font-light md:text-lg text-center max-w-sm leading-tight">Aguarde com tranquilidade. Após a análise
+            da documentação, reembolsaremos até 100% do valor acionado. Sua paz de espírito é nossa prioridade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos" class="w-full py-8 md:py-12 bg-gradient-to-b from-[#F9F9F9] to-[rgba(249,249,249,0.00)]">
+    <div class="flex items-center w-full">
+      <div class="w-full h-0.5 bg-[#3489FE]"></div>
+      <h1 class="text-[#3489FE] font-bold text-3xl md:text-5xl w-full text-center">Conheça os planos</h1>
+      <div class="w-full h-0.5 bg-[#3489FE]"></div>
+    </div>
+
+    <p class="md:text-xl max-w-7xl text-[#3489FE] font-normal text-center mx-auto mt-5 px-4 md:px-8">
+      Oferecemos uma variedade de planos para atender às necessidades de seu pet.
+      <strong class="text-[#9671D5]">Desde consultas de urgência e emergência até cirurgias,
+        vacinas e acupuntura, nossos planos abrangem uma ampla gama de serviços para garantir
+        a saúde de seu animal de estimação.</strong> Escolha entre nossos planos AconchegoPet, Trato Especial Pet
+      e Mimos de Luxo, <strong class="text-[#9671D5]">todos projetados para cuidar do seu pet como ele merece.</strong>
+    </p>
+
+    <div class="flex gap-8 md:gap-5 items-start justify-center px-4 md:px-8 flex-wrap xl:flex-nowrap mt-8">
+      <div
+        class="flex flex-col items-center bg-white rounded-2xl shadow-[0px_0px_62px_0px_rgba(0,0,0,0.10)] px-5 2xl:px-10 py-3">
+        <img src="../assets/img/aconchego.svg" class="w-44 h-44" />
+        <h2 class="font-bold text-[#3489FE] text-lg md:text-2xl max-w-sm text-center mt-3">Aconchego</h2>
+        <h4 class="font-bold text-[#FF7A00]">R$39,90 / MÊS</h4>
+        <div class="w-full h-[1px] bg-[#3489FE]"></div>
+        <a
+          class="my-3 flex gap-2 items-center text-white font-bold w-full justify-center py-3 bg-[#3489FE] rounded-2xl">
+          CONTRATAR PLANO <svg width="10" height="16" class="mb-1" viewBox="0 0 10 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.57031 14.9164L8.09247 8.39423L1.57031 1.87207" stroke="white" stroke-width="2.17405"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a class="flex flex-col items-center gap-3">
+          <div class="flex items-center gap-3">
+            <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.30525 8.66211V8.66211C11.6624 8.66211 14.3839 11.3836 14.3839 14.7408V14.7408C14.3839 15.8598 13.4768 16.767 12.3577 16.767H4.25279C3.13374 16.767 2.22656 15.8598 2.22656 14.7408V14.7408C2.22656 11.3836 4.94808 8.66211 8.30525 8.66211Z"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M8.81264 2.58405C8.81229 2.86365 8.58548 3.0901 8.30588 3.08998C8.02628 3.08987 7.79965 2.86325 7.79953 2.58365C7.7994 2.30405 8.02584 2.07723 8.30543 2.07687C8.44 2.0767 8.56911 2.13008 8.66427 2.22523C8.75942 2.32038 8.81281 2.44949 8.81264 2.58405"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M14.8908 4.61042C14.8904 4.89002 14.6636 5.11646 14.384 5.11635C14.1044 5.11624 13.8778 4.88961 13.8777 4.61002C13.8775 4.33042 14.104 4.1036 14.3836 4.10324C14.5181 4.10306 14.6472 4.15644 14.7424 4.2516C14.8375 4.34675 14.8909 4.47585 14.8908 4.61042"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M2.73451 4.61042C2.73417 4.89002 2.50735 5.11646 2.22775 5.11635C1.94816 5.11624 1.72152 4.88961 1.7214 4.61002C1.72128 4.33042 1.94771 4.1036 2.22731 4.10324C2.36188 4.10306 2.49098 4.15644 2.58614 4.2516C2.6813 4.34675 2.73468 4.47585 2.73451 4.61042"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="font-light text-[#9671D5] text-center">Quero saber mais sobre esse plano</p>
+          </div>
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.39844 12.7666C2.39844 18.2894 6.87559 22.7666 12.3984 22.7666C17.9213 22.7666 22.3984 18.2894 22.3984 12.7666C22.3984 7.24375 17.9213 2.7666 12.3984 2.7666C6.87559 2.7666 2.39844 7.24375 2.39844 12.7666Z"
+              stroke="#9671D5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16.3984 10.7666L12.3984 14.7666L8.39844 10.7666" stroke="#9671D5" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <div
+        class="relative flex flex-col items-center bg-white rounded-2xl shadow-[0px_0px_62px_0px_rgba(0,0,0,0.10)] px-5 2xl:px-10 py-3 xl:py-5">
+
+        <h1
+          class="whitespace-nowrap font-bold text-white text-center bg-[#3489FE] rounded-lg py-1 px-5 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          MAIS VENDIDO</h1>
+
+        <img src="../assets/img/trato-especial.svg" class="w-44 md:w-64 h-44" />
+        <h2 class="font-bold text-[#3489FE] text-lg md:text-2xl xl:text-3xl max-w-sm text-center mt-3">Trato Especial
+        </h2>
+        <h4 class="font-bold text-[#FF7A00] xl:text-lg">R$39,90 / MÊS</h4>
+        <div class="w-full h-[1px] bg-[#3489FE]"></div>
+        <a
+          class="my-3 flex gap-2 items-center xl:text-lg text-white font-bold w-full justify-center py-3 bg-[#3489FE] rounded-2xl">
+          CONTRATAR PLANO <svg width="10" height="16" class="mb-1" viewBox="0 0 10 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.57031 14.9164L8.09247 8.39423L1.57031 1.87207" stroke="white" stroke-width="2.17405"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a class="flex flex-col items-center gap-3">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 xl:w-6 xl:h-6" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.30525 8.66211V8.66211C11.6624 8.66211 14.3839 11.3836 14.3839 14.7408V14.7408C14.3839 15.8598 13.4768 16.767 12.3577 16.767H4.25279C3.13374 16.767 2.22656 15.8598 2.22656 14.7408V14.7408C2.22656 11.3836 4.94808 8.66211 8.30525 8.66211Z"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M8.81264 2.58405C8.81229 2.86365 8.58548 3.0901 8.30588 3.08998C8.02628 3.08987 7.79965 2.86325 7.79953 2.58365C7.7994 2.30405 8.02584 2.07723 8.30543 2.07687C8.44 2.0767 8.56911 2.13008 8.66427 2.22523C8.75942 2.32038 8.81281 2.44949 8.81264 2.58405"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M14.8908 4.61042C14.8904 4.89002 14.6636 5.11646 14.384 5.11635C14.1044 5.11624 13.8778 4.88961 13.8777 4.61002C13.8775 4.33042 14.104 4.1036 14.3836 4.10324C14.5181 4.10306 14.6472 4.15644 14.7424 4.2516C14.8375 4.34675 14.8909 4.47585 14.8908 4.61042"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M2.73451 4.61042C2.73417 4.89002 2.50735 5.11646 2.22775 5.11635C1.94816 5.11624 1.72152 4.88961 1.7214 4.61002C1.72128 4.33042 1.94771 4.1036 2.22731 4.10324C2.36188 4.10306 2.49098 4.15644 2.58614 4.2516C2.6813 4.34675 2.73468 4.47585 2.73451 4.61042"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="font-light text-[#9671D5] text-center">Quero saber mais sobre esse plano</p>
+          </div>
+          <svg class="w-6 h-6 xl:w-7 xl:h-7" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.39844 12.7666C2.39844 18.2894 6.87559 22.7666 12.3984 22.7666C17.9213 22.7666 22.3984 18.2894 22.3984 12.7666C22.3984 7.24375 17.9213 2.7666 12.3984 2.7666C6.87559 2.7666 2.39844 7.24375 2.39844 12.7666Z"
+              stroke="#9671D5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16.3984 10.7666L12.3984 14.7666L8.39844 10.7666" stroke="#9671D5" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <div
+        class="flex flex-col items-center bg-white rounded-2xl shadow-[0px_0px_62px_0px_rgba(0,0,0,0.10)] px-5 2xl:px-10 py-3">
+        <img src="../assets/img/mimos.svg" class="w-44 h-44" />
+        <h2 class="font-bold text-[#3489FE] text-lg md:text-2xl max-w-sm text-center mt-3">Mimos de Luxo</h2>
+        <h4 class="font-bold text-[#FF7A00]">R$39,90 / MÊS</h4>
+        <div class="w-full h-[1px] bg-[#3489FE]"></div>
+        <a
+          class="my-3 flex gap-2 items-center text-white font-bold w-full justify-center py-3 bg-[#3489FE] rounded-2xl">
+          CONTRATAR PLANO <svg width="10" height="16" class="mb-1" viewBox="0 0 10 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.57031 14.9164L8.09247 8.39423L1.57031 1.87207" stroke="white" stroke-width="2.17405"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a class="flex flex-col items-center gap-3">
+          <div class="flex items-center gap-3">
+            <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.30525 8.66211V8.66211C11.6624 8.66211 14.3839 11.3836 14.3839 14.7408V14.7408C14.3839 15.8598 13.4768 16.767 12.3577 16.767H4.25279C3.13374 16.767 2.22656 15.8598 2.22656 14.7408V14.7408C2.22656 11.3836 4.94808 8.66211 8.30525 8.66211Z"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M8.81264 2.58405C8.81229 2.86365 8.58548 3.0901 8.30588 3.08998C8.02628 3.08987 7.79965 2.86325 7.79953 2.58365C7.7994 2.30405 8.02584 2.07723 8.30543 2.07687C8.44 2.0767 8.56911 2.13008 8.66427 2.22523C8.75942 2.32038 8.81281 2.44949 8.81264 2.58405"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M14.8908 4.61042C14.8904 4.89002 14.6636 5.11646 14.384 5.11635C14.1044 5.11624 13.8778 4.88961 13.8777 4.61002C13.8775 4.33042 14.104 4.1036 14.3836 4.10324C14.5181 4.10306 14.6472 4.15644 14.7424 4.2516C14.8375 4.34675 14.8909 4.47585 14.8908 4.61042"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M2.73451 4.61042C2.73417 4.89002 2.50735 5.11646 2.22775 5.11635C1.94816 5.11624 1.72152 4.88961 1.7214 4.61002C1.72128 4.33042 1.94771 4.1036 2.22731 4.10324C2.36188 4.10306 2.49098 4.15644 2.58614 4.2516C2.6813 4.34675 2.73468 4.47585 2.73451 4.61042"
+                stroke="#9671D5" stroke-width="3.03934" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="font-light text-[#9671D5] text-center">Quero saber mais sobre esse plano</p>
+          </div>
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.39844 12.7666C2.39844 18.2894 6.87559 22.7666 12.3984 22.7666C17.9213 22.7666 22.3984 18.2894 22.3984 12.7666C22.3984 7.24375 17.9213 2.7666 12.3984 2.7666C6.87559 2.7666 2.39844 7.24375 2.39844 12.7666Z"
+              stroke="#9671D5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16.3984 10.7666L12.3984 14.7666L8.39844 10.7666" stroke="#9671D5" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="detalhes-planos" class="px-4 py-8 md:px-8 md:py-12">
+    <div class="flex flex-col items-center gap-5 max-w-7xl mx-auto">
+
+      <h1 class="text-[#3489FE] font-bold text-3xl md:text-5xl w-full text-center max-w-lg">Ainda tem dúvidas de qual
+        plano
+        se encaixa melhor para você?</h1>
+
+      <div class="flex gap-10 flex-wrap justify-center">
+        <div
+          class="relative w-full max-w-sm flex flex-col gap-5 shadow-[0px_0px_62px_0px_rgba(0,0,0,0.10)] rounded-b-xl">
+          <div class="flex text-lg justify-between text-white font-bold py-3 px-5 bg-[#9671D5] rounded-t-xl">
+            <h1>Aconchego</h1>
+            <h1>R$ 39,90</h1>
+          </div>
+
+          <p class="font-bold text-[#FF7A00] px-5">Ideal para tutores preocupados
+            com o básico:</p>
+
+          <p class="font-light text-[#555555] px-5">O Plano Aconchego oferece uma opção acessível para tutores que
+            desejam cuidar de seus pets com serviços essenciais.
+            Com um valor mais em conta. É a escolha perfeita para tutores que buscam o essencial em cuidados de saúde
+            para seus
+            queridos animais de estimação.</p>
+
+          <div class="w-11/12 h-0.5 bg-[#EFEFEF] ml-5"></div>
+
+          <ul class="text-[#555555] px-5 pb-10">
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              
+              <p class="font-light text-lg">Consulta Clínico Geral</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Exames Laboratoriais</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Atendimento Ambulatorial</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Aplicação de vacinas</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Assistência </p>
+            </li>
+          </ul>
+
+          <a
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex gap-2 items-center text-white font-bold w-11/12 justify-center py-3 bg-[#3489FE] rounded-2xl">
+            CONTRATAR PLANO <svg width="10" height="16" class="mb-1" viewBox="0 0 10 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.57031 14.9164L8.09247 8.39423L1.57031 1.87207" stroke="white" stroke-width="2.17405"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="relative w-full max-w-sm flex flex-col gap-5 shadow-[0px_0px_62px_0px_rgba(0,0,0,0.10)] rounded-b-xl">
+          <div class="flex text-lg justify-between text-white font-bold py-3 px-5 bg-[#9671D5] rounded-t-xl">
+            <h1>Trato Especial</h1>
+            <h1>R$ 99,90</h1>
           </div>
+
+          <p class="font-bold text-[#FF7A00] px-5">Assistẽncia completa para o seu pet:</p>
+
+          <p class="font-light text-[#555555] px-5">O Plano Trato Especial é a escolha intermediária para tutores que
+            desejam proporcionar aos seus pets um leque mais amplo de cuidados de saúde. Este plano oferece uma
+            variedade maior de serviços, que incluem atendimento veterinário avançado, exames de diagnóstico e
+            tratamentos especializados. É a opção perfeita para tutores que buscam tranquilidade e assistência completa
+            para seus companheiros peludos.</p>
+
+          <div class="w-11/12 h-0.5 bg-[#EFEFEF] ml-5"></div>
+
+          <ul class="text-[#555555] px-5 pb-10">
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Aplicação de vacinas</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Consulta Clínico Geral</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Exames Laboratoriais</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Atendimento Ambulatorial</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Consulta com Especialista</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Exames Imagem</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Internação</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Cirurgia Emergêncial</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Assistência funeral</p>
+            </li>
+          </ul>
+
+          <a
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex gap-2 items-center text-white font-bold w-11/12 justify-center py-3 bg-[#3489FE] rounded-2xl">
+            CONTRATAR PLANO <svg width="10" height="16" class="mb-1" viewBox="0 0 10 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.57031 14.9164L8.09247 8.39423L1.57031 1.87207" stroke="white" stroke-width="2.17405"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="relative w-full max-w-sm flex flex-col gap-5 shadow-[0px_0px_62px_0px_rgba(0,0,0,0.10)] rounded-b-xl">
+          <div class="flex text-lg justify-between text-white font-bold py-3 px-5 bg-[#9671D5] rounded-t-xl">
+            <h1>Mimos de Luxo</h1>
+            <h1>R$ 299,90</h1>
+          </div>
+
+          <p class="font-bold text-[#FF7A00] px-5">O ápice dos cuidados para
+            o seu pet:</p>
+
+          <p class="font-light text-[#555555] px-5">O Plano Mimos de Luxo é a escolha mais completa para tutores que
+            desejam proporcionar o melhor atendimento para seus pets. Além de uma gama expandida de serviços que inclui
+            cirurgias, exames avançados e tratamentos de ponta, este plano oferece uma quantidade generosa de usos por
+            serviço. É a opção ideal para tutores que não medem esforços em garantir que seus pets recebam os cuidados
+            mais sofisticados e abrangentes disponíveis no mercado.</p>
+
+          <div class="w-11/12 h-0.5 bg-[#EFEFEF] ml-5"></div>
+
+          <ul class="text-[#555555] px-5 pb-10">
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Aplicação de vacinas</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Consulta Clínico Geral</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Consulta com Especialista</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Exames Laboratoriais</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Atendimento Ambulatorial</p>
+            </li>
+
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Exames Imagem</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Internação</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Transporte do Pet</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Cirurgia Emergêncial</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Acupuntura e Fisioterapia</p>
+            </li>
+            <li class="space-x-3 flex items-center">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4937 1.52148L6.52928 13.4788L2 8.04364" stroke="#3489FE" stroke-width="2.17405"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="font-light text-lg">Assistência funeral</p>
+            </li>
+          </ul>
+
+          <a
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex gap-2 items-center text-white font-bold w-11/12 justify-center py-3 bg-[#3489FE] rounded-2xl">
+            CONTRATAR PLANO <svg width="10" height="16" class="mb-1" viewBox="0 0 10 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.57031 14.9164L8.09247 8.39423L1.57031 1.87207" stroke="white" stroke-width="2.17405"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
         </div>
       </div>
 
-      <div 
-        class="w-full bg-cover bg-no-repeat bg-center px-4 md:px-8 pt-40 pb-8 md:pb-12"
-        style="background-image: url(../assets/img/bg_comofunciona.jpg);">
-        <h1 class="text-white font-bold text-2xl md:text-5xl text-center">Como Funciona</h1>
 
-        <div class="hidden xl:flex justify-center gap-5 max-w-7xl mx-auto">
-          <div class="flex flex-col gap-24">
-            <div class="max-w-xs space-y-3">
-              <img class="min-w-[280px] w-[24vw]" src="../assets/img/leve-atendimento.svg" />
-              <h2 class="text-white font-bold text-3xl text-center ml-9">Leve seu pet para atendimento</h2>
-            </div>
-            <div class="max-w-sm space-y-3 ml-10">
-              <img class="min-w-[280px] w-[24vw]" src="../assets/img/reembolso.svg" />
-              <h2 class="text-white font-bold text-3xl text-center">Acesse o portal e solicite reembolso</h2>
-            </div>
-          </div>
+      <div class="flex flex-col items-center gap-5 mt-10">
+        <p class="font-bold text-[#FF7A00] max-w-lg text-center">Veja o detalhamento do plano com todas as informações
+          como carências, limites de uso e valores</p>
+          <a href="#" class="rounded-md text-white font-bold py-3 px-10 bg-[#9671D5]">BAIXAR DOCUMENTO</a>
+      </div>
+    </div>
 
-          <div class="flex flex-col justify-center gap-20 min-w-sm">
-            <img src="../assets/img/paws-track-1.svg"  />
-            <img src="../assets/img/paws-track-2.svg" />
-            <img src="../assets/img/paws-track-1.svg" />
-          </div>
+  </section>
 
-          <div class="flex flex-col mt-20  gap-24">
-            <div class="max-w-sm space-y-3">
-              <img class="min-w-[280px] w-[24vw]" src="../assets/img/documentos.svg" />
-              <h2 class="text-white font-bold text-3xl text-center">Solicite os documentos no atendimento</h2>
-            </div>
-            <div class="max-w-sm space-y-3 ml-10">
-              <img class="min-w-[280px] w-[24vw]" src="../assets/img/pix.svg" />
-              <h2 class="text-white font-bold text-3xl text-center">Receba o pix do reembolso na conta cadastrada</h2>
-            </div>
+  <section id="duvidas" class="px-4 py-8 md:px-8 md:py-12">
+    <div class="w-full flex flex-col gap-5 py-10 px-2 md:px-5 max-w-7xl border rounded-[42px] border-[#3489FE] mx-auto">
+      <div>
+        <h1 class="font-bold text-2xl md:text-4xl text-[#8E5CE3] text-center">Faq</h1>
+        <p class="text-center text-lg">Perguntas frequentes sobre nós</p>
+      </div>
+      <div class="space-y-5">
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">O que é Health Pet e Planos Pet Care?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
           </div>
-          
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
         </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">Posso utilizar o mesmo plano para mais de um pet?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
+        </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">Meu pet não tem todas as vacinas. E agora?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
+        </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">Posso levar meu pet em qualquer clínica?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
+        </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">Existe limite de idade para a contratação?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
+        </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">A Assegura Pet tem multa por cancelamento?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
+        </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">Após a contratação, quando posso começar a utilizar?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
+        </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">Meu Pet tem uma doença preexistente. Posso contratar?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+          <div class="h-[1px] w-full bg-[#A1A1A1] mt-3"></div>
+        </div>
+        <div class="h-auto px-4 md:px-7">
+          <button
+            class="trigger w-full group bg-white gap-2 flex-row flex items-center justify-between">
+            <p class="leading-tight text-center md:text-left md:text-lg text-[#5E5E5E]">Meus limites acabaram. Posso contratar mais?</p>
+
+            <svg class="group-aria-expanded:rotate-90 shrink-0 transition" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.5L7.75 7.75L1 1" stroke="#9671D5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+          </button>
+          <div class="content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate debitis error sequi odio accusamus autem dolore laboriosam dolor tempora esse optio eligendi facere quia quos sapiente at quam repudiandae.
+            </p>
+          </div>
+        </div>
+      </div>
       
-
-        <div class="flex xl:hidden justify-center items-center flex-col gap-5 mt-5">
-          <div class="max-w-sm space-y-3">
-            <img class="min-w-[280px] mx-auto" src="../assets/img/leve-atendimento.svg" />
-            <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Leve seu pet para atendimento</h2>
-          </div>
-          <img src="../assets/img/paws-track-v.svg" />
-          <div class="max-w-sm space-y-3">
-            <img class="min-w-[280px] mx-auto" src="../assets/img/reembolso.svg" />
-            <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Acesse o portal e solicite reembolso</h2>
-          </div>
-          <img src="../assets/img/paws-track-v.svg" />
-          <div class="max-w-sm space-y-3">
-            <img class="min-w-[280px] mx-auto" src="../assets/img/documentos.svg" />
-            <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Solicite os documentos no atendimento</h2>
-          </div>
-          <img src="../assets/img/paws-track-v.svg" />
-          <div class="max-w-sm space-y-3">
-            <img class="min-w-[280px] mx-auto" src="../assets/img/pix.svg" />
-            <h2 class="text-white font-bold text-xl md:text-3xl text-center ml-6">Receba o pix do reembolso na conta cadastrada</h2>
-          </div>
-        </div>
-      </div>
+    </div>
   </section>
 
   <footer class="w-full p-4 py-8 md:p-10 bg-black">
@@ -252,21 +998,33 @@
   toggleNavbar.addEventListener('click', () => {
     isMenuOpen = !isMenuOpen;
 
-    if (isMenuOpen)
-    {
+    if (isMenuOpen) {
       $('#nav-bar').addClass('rounded-xl');
       setTimeout(() => { collapse.ariaExpanded = String(isMenuOpen); }, 350)
     }
-    else
-    {
+    else {
       setTimeout(() => {
         $('#nav-bar').removeClass('rounded-xl');
       }, 350)
       collapse.ariaExpanded = String(isMenuOpen);
     }
-
-    
   })
+
+    $(document).ready(() => {
+      $(function () {
+
+        $(".trigger").click(function () {
+          const clickedContent = $(".content");
+          const cont = $(this).next();
+
+          $('.trigger').attr('aria-expanded', 'false');
+          $(this).attr('aria-expanded', 'true');
+
+          clickedContent.slideUp();
+          $(cont).slideDown("fast");
+        });
+      });
+    })
 </script>
 
 </html>
