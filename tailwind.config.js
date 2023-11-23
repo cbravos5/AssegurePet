@@ -34,8 +34,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),
-  plugin(function({ addUtilities }) {
+  plugins: [plugin(function({ addUtilities }) {
     addUtilities({
       '.absolute-center': {
         'top': '50%',
