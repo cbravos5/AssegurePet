@@ -4,25 +4,25 @@
 
 @font-face {
   font-family: "Bree";
-  src: url('../assets/fonts/Bree/Bree_Regular.otf') format('truetype');
+  src: url('../src/assets/fonts/Bree/Bree_Regular.otf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Bree";
-  src: url('../assets/fonts/Bree/Bree_Light.otf') format('truetype');
+  src: url('../src/assets/fonts/Bree/Bree_Light.otf') format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Bree";
-  src: url('../assets/fonts/Bree/Bree_Bold.otf') format('truetype');
+  src: url('../src/assets/fonts/Bree/Bree_Bold.otf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Bree";
-  src: url('../assets/fonts/Bree/Bree_ExtraBold.otf') format('truetype');
+  src: url('../src/assets/fonts/Bree/Bree_ExtraBold.otf') format('truetype');
   font-weight: 800;
 }
 
@@ -39,4 +39,10 @@ html {
 
 body {
   scroll-behavior: smooth;
+}
+
+@layer components {
+  .custom-scrollbar {
+    @apply [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-[#2170DC55] [&::-webkit-scrollbar-track]:rounded-md [&::-webkit-scrollbar-thumb]:bg-[#2170DC] [&::-webkit-scrollbar-thumb]:rounded-md
+  }
 }
