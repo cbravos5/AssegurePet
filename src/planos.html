@@ -52,7 +52,7 @@
               <a href="./como-funciona.html">Como funciona</a>
             </li>
             <li>
-              <a href="./blog.html">Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li>
               <a href="./planos.html" class="font-bold" aria-current="page">Conheça os Planos</a>
@@ -84,7 +84,7 @@
         <div class="w-1 min-h-full bg-[#9671D5]"></div>
         <div>
           <h2 class="font-bold md:text-xl text-[#9671D5]">Proposta Assegura Pet | Reembolso</h2>
-          <p id="gen-date" class="font-bold text-[#2275E6]">Gerado no dia 23 de Novembro de 2024 as 18 horas e 36 minutos</p>
+          <p id="gen-date" class="font-bold text-[#2275E6]"></p>
         </div>
       </div>
       
@@ -410,10 +410,10 @@
 
         <div class="text-white flex flex-col items-center md:items-start font-light">
           <a href="./index.html">Início</a>
-          <a href="./sobre-nos.html" class="font-bold">Sobre nós</a>
+          <a href="./sobre-nos.html">Sobre nós</a>
           <a href="./como-funciona.html">Como Funciona</a>
           <a href="#">Blog</a>
-          <a href="./planos.html">Conheça os Planos</a>
+          <a href="./planos.html" class="font-bold">Conheça os Planos</a>
           <a href="https://cliente.assegurapet.com.br/cliente">Portal do Cliente</a>
           <a href="./index.html#duvidas">Dúvidas</a>
         </div>
@@ -500,10 +500,13 @@
 </body>
 
 <script>
+  const dateParser = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+
   const toggleNavbar = document.getElementById('collapse-toggler');
   const collapse = document.getElementById('collapse');
 
   let isMenuOpen = false;
+
 
   toggleNavbar.addEventListener('click', () => {
     isMenuOpen = !isMenuOpen;
@@ -533,6 +536,12 @@
           clickedContent.slideUp();
           $(cont).slideDown("fast");
         });
+
+        const now = new Date();
+
+        
+
+        $("#gen-date").text(`Gerado no dia ${dateParser.format(now)} as ${now.getHours()} horas e ${now.getMinutes()} minutos`)
       });
     })
 </script>
